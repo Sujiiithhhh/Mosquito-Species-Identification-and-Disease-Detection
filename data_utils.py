@@ -1,18 +1,3 @@
-# created by abdullah zubair for honours undergraduate thesis (university of calgary 2024)
-# part of the soghigian lab (UCVM)
-# linkedin: https://www.linkedin.com/in/a-zubair-calgary/
-
-
-# this file has functions to load the dataset apply transformations and split the data into train validation and test sets
-# the train_transform and test_transform define the data augmentation and preprocessing steps for the images
-# these transformations help make the model better and improve its performance
-# the save_dataset_split_info function saves the dataset split information like file paths species counts and genera counts
-# the load_dataset function is the main function that loads the dataset using pytorch's imagefolder
-# it splits the dataset into train validation and test subsets using scikit-learns train_test_split
-# it applie the transformations to the data subsets and creates data loaders for efficient data loading during training and evaluation
-
-# basically  this file takes care of all the datarelated tasks needed for the mosquito identification model
-
 import os
 import torch
 import torchvision.transforms as transforms #for data augmentation and preprocessing
